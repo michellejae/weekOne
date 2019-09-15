@@ -35,10 +35,17 @@ function monthly(arr, montlylArr){
   }
 }
 
+function totalRevenue (arr, newArr, array2) {
+  arr.map((e, i) => {
+    newArr.push(e + array2[i])
+  })
+}
+
 
  module.exports = {
    convertToIntegers,
    yearly,
    weekly,
-   monthly
+   monthly,
+   totalRevenue
  }

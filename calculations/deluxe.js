@@ -24,3 +24,12 @@ yearly(deluxeRevenue, deluxeYearlyRevenue);
 weekly(deluxeSold, deluxeWeeklySold);
 monthly(deluxeSold, deluxeMonthlySold);
 yearly(deluxeSold, deluxeYearlySold);
+
+module.exports = {
+  deluxeWeeklyRevenue,
+  deluxeWeeklySold,
+  deluxeMonthlyRevenue,
+  deluxeMonthlySold,
+  deluxeYearlyRevenue,
+  deluxeYearlySold
+}

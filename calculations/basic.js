@@ -25,3 +25,11 @@ weekly(basicSold, basicWeeklySold);
 monthly(basicSold, basicMonthlySold);
 yearly(basicSold, basicYearlySold);
 
+module.exports = {
+  basicWeeklyRevenue,
+  basicWeeklySold,
+  basicYearlyRevenue,
+  basicYearlySold,
+  basicMonthlyRevenue,
+  basicMonthlySold
+}
