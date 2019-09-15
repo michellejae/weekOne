@@ -1,9 +1,6 @@
-let numbersTotalArr = []
-let yearlyArrTotal = []
-
- function convertToIntegers(arr){
+ function convertToIntegers(arr, newArr){
    arr.map((x) => {
-     return numbersTotalArr.push(parseInt(x))
+     return newArr.push(parseInt(x))
    })
  }
  
@@ -13,18 +10,23 @@ function arrSum(arr){
   }, 0)
 }
 
-function yearly(arr){
+function yearly(arr, yearlyArr){
   while(arr.length){
     let tinyArr = (arr.splice(0,365))
-    yearlyArrTotal.push(arrSum(tinyArr))
+    yearlyArr.push(arrSum(tinyArr))
+  }
+}
+
+function weekly(arr, weeklyArr){
+  while(arr.length){
+    let weeklyTinyArr = (arr.splice(0,7))
+    weeklyArr.push(arrSum(weeklyTinyArr))
   }
 }
 
 
  module.exports = {
    convertToIntegers,
-   arrSum,
    yearly,
-   numbersTotalArr,
-   yearlyArrTotal
+   weekly,
  }
