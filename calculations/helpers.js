@@ -11,16 +11,27 @@ function arrSum(arr){
 }
 
 function yearly(arr, yearlyArr){
-  while(arr.length){
-    let tinyArr = (arr.splice(0,365))
+  let arr2 = arr.slice(0)
+  while(arr2.length){
+    let tinyArr = (arr2.splice(0,365))
     yearlyArr.push(arrSum(tinyArr))
   }
 }
 
 function weekly(arr, weeklyArr){
-  while(arr.length){
-    let weeklyTinyArr = (arr.splice(0,7))
+  let arr2 = arr.slice(0)
+  while(arr2.length){
+    let weeklyTinyArr = (arr2.splice(0,7))
     weeklyArr.push(arrSum(weeklyTinyArr))
+  }
+}
+
+//monthly is 30 days per month. need to circe back and work out correct distro
+function monthly(arr, montlylArr){
+  let arr2 = arr.slice(0)
+  while(arr2.length){
+    let monthlyTinyArr = (arr2.splice(0,30))
+    montlylArr.push(arrSum(monthlyTinyArr))
   }
 }
 
@@ -29,4 +40,5 @@ function weekly(arr, weeklyArr){
    convertToIntegers,
    yearly,
    weekly,
+   monthly
  }
