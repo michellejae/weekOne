@@ -1,6 +1,6 @@
- function convertToIntegers(arr, newArr){
+ function convertToIntegers(arr, newArr, num){
    arr.map((x) => {
-     return newArr.push(parseInt(x))
+     return newArr.push(parseInt(x)*num)
    })
  }
  
