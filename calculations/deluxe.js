@@ -1,3 +1,4 @@
+
 const deluxeData = `./data/Deluxe_Cupcake.txt`;
 const fs = require('fs');
 let deluxeCupcakes = fs.readFileSync(deluxeData).toString().split("\n");

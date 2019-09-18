@@ -32,5 +32,7 @@ yearlyRevenue.total = total.totalYearlyRevenue,
 yearlyRevenue.basic = basic.basicYearlyRevenue,
 yearlyRevenue.deluxe = deluxe.deluxeYearlyRevenue
 
-
+let test = {
+  a = 12
+}
 

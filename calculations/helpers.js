@@ -49,3 +49,4 @@ function totalRevenue (arr, newArr, array2) {
    monthly,
    totalRevenue
  }
+
