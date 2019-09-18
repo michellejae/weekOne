@@ -36,3 +36,4 @@ let test = {
   a = 12
 }
 
+export { test };
